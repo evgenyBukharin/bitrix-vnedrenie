@@ -1,0 +1,29 @@
+.title {
+	margin: 0;
+	color: var(--black-color);
+	&::selection {
+		background: var(--lime-color);
+	}
+	&__h2 {
+		font-size: 40px;
+		line-height: 1.1;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	&__h3 {
+		font-size: 20px;
+		line-height: 1.4;
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 768px) {
+	.title {
+		&__h2 {
+			font-size: 32px;
+			line-height: 1.2;
+		}
+	}
+}
